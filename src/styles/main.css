@@ -19,9 +19,22 @@ body {
     overflow: hidden;
 }
 
+.auth-container {
+    width: calc(1.5 * var(--card-vertical-width));
+    padding: 2rem;
+}
+
 .cart-checkout-group {
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--ink-grey-dark);
+}
+
+.form .input-group label {
+    font-weight: 400;
+}
+
+.form .input-group input {
+    border: 1px solid var(--ink-grey-light);
 }
 
 .flex-center {
