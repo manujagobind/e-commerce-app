@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: var(--ink-bg);
+    height: 100vh;
 }
 
 .item-display-container {
@@ -24,7 +25,44 @@ body {
     border-bottom: 1px solid var(--ink-grey-dark);
 }
 
+.products-container {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "products-list"
+    ;
+}
+
+.products-container .products-filter {
+    padding: 1rem;
+    min-width: 15rem;
+    grid-area: products-filter;
+    background-color: var(--ink-white);
+    display: none;
+}
+
+.products-container .products-list {
+    grid-area: products-list;
+}
+
+@media screen and (min-width: 850px) {
+    .products-container {
+        grid-template-areas:
+        "products-filter products-list"
+    ;
+    }
+
+    .products-container .products-filter {
+        display: unset;
+    }
+}
+
+.form .input-group label.inline {
+    display: inline-block;
+}
+
 .flex-center {
+    align-items: center;
     justify-content: center;
 }
 
