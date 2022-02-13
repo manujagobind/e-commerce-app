@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta
+      name="description"
+      content="An e-commerce app made using Pleasant UI."
+    />
+    <title>Cart | E-commerce App</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>E-commerce App</em></h1>
+        </div>
+        <ul class="list list-horizontal m-left-auto">
+          <li>
+            <button class="btn btn-link">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/cart.html"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+              <span class="badge">1</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/wishlist.html"
+                ><i class="fas fa-heart"></i
+              ></a>
+              <span class="badge">3</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-primary">
+              <a href="#">Login</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="center">Cart (1)</h1>
+        <div class="flex flex-gap flex-center flex-wrap">
+          <div class="card card-horizontal">
+            <div class="card-column">
+              <div class="card-block item-display-container">
+                <img
+                  src="https://images.unsplash.com/photo-1605908502724-9093a79a1b39"
+                  alt="Product image"
+                  class="img-responsive"
+                />
+              </div>
+            </div>
+            <div class="card-column">
+              <div class="card-padded-block">
+                <p>Men's Premium Jacket</p>
+                <p class="title">
+                  $150 <span class="sub-title ink-grey strike">$300</span>
+                </p>
+                <p class="ink-grey">50% off</p>
+              </div>
+              <div class="card-padded-block">
+                <p>Quantity: 2</p>
+              </div>
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide btn-link">Remove from Cart</button>
+                <button class="btn btn-wide btn-link">Move to Wishlist</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-padded-block">
+              <div class="cart-checkout-group">
+                <p class="title upper">Price Details</p>
+              </div>
+              <div class="cart-checkout-group">
+                <div class="flex flex-space-between">
+                  <p>Price (2 items)</p>
+                  <p>$300</p>
+                </div>
+                <div class="flex flex-space-between">
+                  <p>Discount</p>
+                  <p>- $50</p>
+                </div>
+                <div class="flex flex-space-between">
+                  <p>Delivery Charges</p>
+                  <p>$35</p>
+                </div>
+              </div>
+              <div class="cart-checkout-group flex flex-space-between">
+                <p class="title upper">Total Amount</p>
+                <p class="title upper">$285</p>
+              </div>
+            </div>
+            <div class="card-padded-block card-actions">
+              <button class="btn btn-wide">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

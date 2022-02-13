@@ -1,0 +1,45 @@
+@import url("https://deploy-preview-8--pleasant-ui.netlify.app/src/styles/main.css");
+
+:root {
+    --ink-bg: #F5F5F5;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--ink-bg);
+}
+
+.item-display-container {
+    height: fit-content;
+    max-height: 20rem;
+    overflow: hidden;
+}
+
+.cart-checkout-group {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--ink-grey-dark);
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-gap {
+    gap: 1rem;
+}
+
+.strike {
+    text-decoration: line-through;
+}
