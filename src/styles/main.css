@@ -24,6 +24,13 @@ body {
     padding: 2rem;
 }
 
+.product-banner {
+    background-color: var(--ink-white);
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
 .cart-checkout-group {
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--ink-grey-dark);
@@ -55,4 +62,8 @@ body {
 
 .strike {
     text-decoration: line-through;
+}
+
+.pointer {
+    cursor: pointer;
 }
