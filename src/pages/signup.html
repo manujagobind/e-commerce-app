@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta
+      name="description"
+      content="An e-commerce app made using Pleasant UI."
+    />
+    <title>Signup | Commerce One</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Commerce One</em></h1>
+        </div>
+        <ul class="list list-horizontal m-left-auto">
+          <li>
+            <button class="btn btn-link">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/cart.html"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+              <span class="badge">1</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/wishlist.html"
+                ><i class="fas fa-heart"></i
+              ></a>
+              <span class="badge">3</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-primary">
+              <a href="/src/pages/login.html">Login</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="center">Signup</h1>
+        <div class="flex flex-center">
+          <div class="card card-shadow auth-container">
+            <div class="card-padded-block">
+              <form method="" action="#" class="form">
+                <div class="input-group">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="human@commerce.one"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="terms-conditions">I accept all terms and conditions</label>
+                  <input type="checkbox" id="terms-conditions" name="terms-conditions" />
+                </div>
+                <button type="submit" class="btn btn-wide">Sign Up</button>
+              </form>
+            </div>
+            <div class="card-padded-block">
+              <div class="flex flex-space-between">
+                <a href="/src/pages/login.html" class="btn btn-wide btn-link"
+                  >Already have an account?</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

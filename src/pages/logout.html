@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta
+      name="description"
+      content="An e-commerce app made using Pleasant UI."
+    />
+    <title>Log out | Commerce One</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Commerce One</em></h1>
+        </div>
+        <ul class="list list-horizontal m-left-auto">
+          <li>
+            <button class="btn btn-link">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/cart.html"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+              <span class="badge">1</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/wishlist.html"
+                ><i class="fas fa-heart"></i
+              ></a>
+              <span class="badge">3</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-primary">
+              <a href="#">My Account</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="center">Log Out</h1>
+        <div class="flex flex-center">
+          <div class="card card-shadow auth-container">
+            <div class="card-padded-block">
+              <p>Are you sure you want to log out?</p>
+            </div>
+            <div class="card-padded-block">
+              <button class="btn">
+                <a href="/src/pages/login.html">Yes</a>
+              </button>
+              <button class="btn btn-outline"><a href="#">No</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
