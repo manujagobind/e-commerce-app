@@ -62,10 +62,6 @@ body {
     }
 }
 
-.form .input-group label.inline {
-    display: inline-block;
-}
-
 .form .input-group label {
     font-weight: 400;
 }
@@ -93,4 +89,16 @@ body {
 
 .strike {
     text-decoration: line-through;
+}
+
+.list {
+    overflow: unset;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.w-full {
+    width: 100%;
 }
