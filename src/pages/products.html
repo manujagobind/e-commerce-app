@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta
+      name="description"
+      content="An e-commerce app made using Pleasant UI."
+    />
+    <title>Products | Commerce One</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Commerce One</em></h1>
+        </div>
+        <ul class="list list-horizontal m-left-auto">
+          <li>
+            <button class="btn btn-link">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/cart.html">
+                <i class="fas fa-cart-plus"></i>
+              </a>
+              <span class="badge">1</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link has-badge">
+              <a href="/src/pages/wishlist.html">
+                <i class="fas fa-heart"></i>
+              </a>
+              <span class="badge">3</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-primary">
+              <a href="#">My Account</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="products-container">
+      <aside class="products-filter">
+        <div class="flex flex-space-between">
+          <p class="title"><i class="fas fa-filter"></i>Filter</p>
+          <button class="btn btn-link">Clear</button>
+        </div>
+        <form class="flex-col flex-gap" action="" method="">
+          <div>
+            <p class="title">Price</p>
+            <input
+              type="range"
+              name="price-filter"
+              id="price-filter"
+              min="1"
+              max="1000"
+              value="200"
+              class="w-full"
+            />
+            <div class="flex flex-space-between">
+              <span class="ink-grey">1</span>
+              <span class="ink-grey">500</span>
+              <span class="ink-grey">1000</span>
+            </div>
+          </div>
+          <div>
+            <p class="title">Category</p>
+            <div>
+              <input
+                type="checkbox"
+                name="category"
+                id="category1"
+                value="category-filter1"
+              />
+              <label for="category1">Category A</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="category"
+                id="category2"
+                value="category-filter2"
+              />
+              <label for="category2">Category B</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="category"
+                id="category3"
+                value="category-filter3"
+              />
+              <label for="category3">Category C</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="category"
+                id="category4"
+                value="category-filter4"
+              />
+              <label for="category4">Category D</label>
+            </div>
+          </div>
+          <div>
+            <p class="title">Rating</p>
+            <div>
+              <input type="radio" name="rating" value="rating-filter1" id="rating-filter1" />
+              <label for="rating-filter1">4 and above</label>
+            </div>
+            <div>
+              <input type="radio" name="rating" value="rating-filter2" id="rating-filter2" />
+              <label for="rating-filter2">3 and above</label>
+            </div>
+            <div>
+              <input type="radio" name="rating" value="rating-filter3" id="rating-filter3" />
+              <label for="rating-filter3">2 and above</label>
+            </div>
+            <div>
+              <input type="radio" name="rating" value="rating-filter4" id="rating-filter4" />
+              <label for="rating-filter4">1 and above</label>
+            </div>
+          </div>
+          <div>
+            <p class="title">Sort By</p>
+            <div>
+              <input type="radio" name="sort" value="sort-filter1" id="sort-filter1" />
+              <label for="sort-filter1">Price - High to Low</label>
+            </div>
+            <div>
+              <input type="radio" name="sort" value="sort-filter2" id="sort-filter2" />
+              <label for="sort-filter2">Price - Low to High</label>
+            </div>
+          </div>
+        </form>
+      </aside>
+
+      <main class="products-list">
+        <section>
+          <h1 class="center">Products</h1>
+          <div class="container flex flex-gap flex-wrap">
+            <div class="card">
+              <div class="card-block item-display-container layer">
+                <img
+                  src="https://images.unsplash.com/photo-1605908502724-9093a79a1b39"
+                  alt="Product image"
+                  class="img-responsive"
+                />
+                <button class="btn btn-outline btn-danger overlay-top-right">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-padded-block">
+                <p class="center">Men's Premium Jacket</p>
+                <p class="title center">$200</p>
+              </div>
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide">
+                  <a href="/src/pages/cart.html">Go to Cart</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block item-display-container layer">
+                <img
+                  src="https://images.unsplash.com/photo-1605908502724-9093a79a1b39"
+                  alt="Product image"
+                  class="img-responsive"
+                />
+                <button class="btn btn-outline overlay-top-right">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-padded-block">
+                <p class="center">Men's Premium Jacket</p>
+                <p class="title center">$200</p>
+              </div>
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide btn-outline">Add to Cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block item-display-container layer">
+                <img
+                  src="https://images.unsplash.com/photo-1605908502724-9093a79a1b39"
+                  alt="Product image"
+                  class="img-responsive"
+                />
+                <button class="btn btn-outline overlay-top-right">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-padded-block">
+                <p class="center">Men's Premium Jacket</p>
+                <p class="title center">$200</p>
+              </div>
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide btn-outline">Add to Cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block item-display-container layer">
+                <img
+                  src="https://images.unsplash.com/photo-1605908502724-9093a79a1b39"
+                  alt="Product image"
+                  class="img-responsive"
+                />
+                <button class="btn btn-outline overlay-top-right">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-padded-block">
+                <p class="center">Men's Premium Jacket</p>
+                <p class="title center">$200</p>
+              </div>
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide btn-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
