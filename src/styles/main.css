@@ -1,4 +1,4 @@
-@import url("https://deploy-preview-8--pleasant-ui.netlify.app/src/styles/main.css");
+@import url("https://pleasant-ui.netlify.app/src/styles/main.css");
 
 :root {
     --ink-bg: #F5F5F5;
@@ -70,50 +70,4 @@ body {
     .products-container .products-filter {
         display: unset;
     }
-}
-
-.form .input-group label {
-    font-weight: 400;
-}
-
-.form .input-group input {
-    border: 1px solid var(--ink-grey-light);
-}
-
-.flex-center {
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-space-between {
-    justify-content: space-between;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-gap {
-    gap: 1rem;
-}
-
-.strike {
-    text-decoration: line-through;
-}
-
-
-.list {
-    overflow: unset;
-}
-
-.inline {
-    display: inline-block;
-}
-
-.w-full {
-    width: 100%;
-}
-
-.pointer {
-    cursor: pointer;
 }
